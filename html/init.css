@@ -22,4 +22,14 @@
 .mui-btn {
   padding: 10px; }
 
+.mui-card .mui-control-content {
+  padding: 10px; }
+
+.mui-control-content {
+  height: 150px; }
+
+.product-list > img {
+  width: 100%;
+  height: auto; }
+
 /*# sourceMappingURL=init.css.map */
