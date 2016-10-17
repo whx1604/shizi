@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 安装
+1. git clone 
+2. bundle install 安装gem
+3. rails db:create 创建数据库
+4. rails db:migrate
 
-Things you may want to cover:
+## 使用的gem
+* acts-as-taggable-on 标签gem,使用方法在github查看
+* acts_as_commentable_with_threading 评论插件
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
