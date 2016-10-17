@@ -1,3 +1,5 @@
 .idea/
 tmp/
 config/database.yml
+test/
+log/
