@@ -1,5 +1,5 @@
-.idea/
-tmp/
-config/database.yml
-test/
-log/
+/.idea/
+/tmp/
+/config/database.yml
+/test/
+/log/
