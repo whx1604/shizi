@@ -1,5 +1,9 @@
 # README
 
+## ruby & rails
+* ruby 2.3.0
+* rails 5.0
+
 ## 安装
 1. git clone 
 2. bundle install 安装gem
@@ -9,5 +13,6 @@
 ## 使用的gem
 * acts-as-taggable-on 标签gem,使用方法在github查看
 * acts_as_commentable_with_threading 评论插件
+
 
 
