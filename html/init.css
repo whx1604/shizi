@@ -1,3 +1,38 @@
+ul, ol, li {
+  list-style: none; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.t-center {
+  text-align: center; }
+
+.t-left {
+  text-align: left; }
+
+.t-right {
+  text-align: right; }
+
+.clear-fix:after, .clear-fix:before, .clear-fix::after, .clear-fix::before {
+  content: ".";
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both; }
+
+.ui-page-login,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px; }
+
+.mui-content {
+  height: 100%; }
+
 .area {
   margin: 20px auto 0px auto; }
 
@@ -31,5 +66,64 @@
 .product-list > img {
   width: 100%;
   height: auto; }
+
+.try-comment {
+  padding: 0.16rem;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px; }
+  .try-comment:after, .try-comment:before, .try-comment::after, .try-comment::before {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both; }
+  .try-comment .praise-btn span {
+    padding: 0.1rem 0.2rem;
+    background-color: #EBF4FB;
+    color: #4686D2;
+    display: block;
+    border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; }
+    .try-comment .praise-btn span:first-child {
+      margin-bottom: 0.05rem; }
+  .try-comment .observer {
+    display: flex;
+    justify-content: space-between; }
+    .try-comment .observer span:first-child {
+      color: #555555; }
+    .try-comment .observer span:last-child {
+      color: #B0B0B0; }
+  .try-comment .comment-title:after, .try-comment .comment-title:before, .try-comment .comment-title::after, .try-comment .comment-title::before {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both; }
+  .try-comment .comment-content {
+    width: calc(100% - 2rem); }
+  .try-comment .comment-content-text {
+    padding: 5px;
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    border-radius: 5px; }
+  .try-comment .reply {
+    margin-top: 0.05rem;
+    text-align: right; }
+    .try-comment .reply span {
+      margin-left: 0.1rem; }
+  .try-comment .comment-child {
+    padding-left: 1rem; }
+    .try-comment .comment-child li {
+      margin-top: 10px; }
+      .try-comment .comment-child li:after, .try-comment .comment-child li:before, .try-comment .comment-child li::after, .try-comment .comment-child li::before {
+        content: ".";
+        height: 0;
+        visibility: hidden;
+        display: block;
+        clear: both; }
 
 /*# sourceMappingURL=init.css.map */

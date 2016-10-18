@@ -1,0 +1,46 @@
+@mixin clear_fix {
+  &:after,&:before,&::after,&::before{
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+  }
+}
+@mixin radius($value: 5px) {
+  border-radius: $value;
+  -o-border-radius: $value;
+  -ms-border-radius: $value;
+  -moz-border-radius: $value;
+  -webkit-border-radius: $value;
+}
+
+
+
+ul,ol,li{
+  list-style: none;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.t-center{
+  text-align: center;
+}
+.t-left{
+  text-align: left;
+}
+.t-right{
+  text-align: right;
+}
+.clear-fix {
+  &:after,&:before,&::after,&::before{
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+  }
+}

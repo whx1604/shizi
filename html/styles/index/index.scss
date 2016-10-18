@@ -11,3 +11,61 @@
     height: auto;
   }
 }
+//活动详情评论区
+.try-comment{
+  padding: 0.16rem;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  @include clear_fix;
+  .praise-btn{
+    span{
+      padding: 0.1rem 0.2rem;
+      background-color: #EBF4FB;
+      color: #4686D2;
+      display: block;
+      @include radius();
+      &:first-child{
+        margin-bottom: 0.05rem;
+      }
+    }
+  }
+  .observer{
+    display: flex;
+    justify-content: space-between;
+    span{
+      &:first-child{
+        color: #555555;
+      }
+      &:last-child{
+        color: #B0B0B0;
+      }
+    }
+  }
+  .comment-title{
+    @include clear_fix;
+  }
+  .comment-content{
+    width: calc(100% - 2rem);
+  }
+  .comment-content-text{
+    padding: 5px;
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  .reply{
+    margin-top: 0.05rem;
+    text-align: right;
+    span{
+      margin-left: 0.1rem;
+    }
+  }
+  .comment-child{
+    li{
+      margin-top: 10px;
+      @include clear_fix;
+    }
+    padding-left: 1rem;
+  }
+}
