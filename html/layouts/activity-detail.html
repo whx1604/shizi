@@ -36,7 +36,7 @@
         </div>
         <div class="mui-card-footer">
             <span>活动时间:6/17-8/27</span>
-            <button type="button" class="mui-btn mui-btn-warning">尝柿</button>
+            <button id='promptBtn' type="button" class="mui-btn mui-btn-warning">尝柿</button>
         </div>
     </div>
     <section class="try-comment">
@@ -92,6 +92,15 @@
     </nav>
 </div>
 <script src="../js/mui.min.js"></script>
+<script>
+    document.getElementById("promptBtn").addEventListener('tap', function(e) {
+        e.detail.gesture.preventDefault(); //修复iOS 8.x平台存在的bug，使用plus.nativeUI.prompt会造成输入法闪一下又没了
+        var btnArray = ['取消', '确定'];
+        mui.prompt('', '手机号', '请输入您的手机号', btnArray, function() {
+            mui.alert('您的折扣券为：2345', '优惠券');
+        })
+    });
+</script>
 </body>
 
 </html>
