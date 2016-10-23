@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>组队表单</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="../mui.min.css">
+    <link rel="stylesheet" href="../init.css">
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">组队</h1>
+</header>
+<div class="mui-content">
+    <div style="padding: 10px 10px;">
+        <div id="segmentedControl" class="mui-segmented-control">
+            <a class="mui-control-item" href="#item1">试一试</a>
+            <a class="mui-control-item mui-active" href="#item2">应用</a>
+            <a class="mui-control-item" href="#item3">任务</a>
+            <a class="mui-control-item" href="#item4">我</a>
+        </div>
+    </div>
+    <form class="mui-input-group" style="margin: 0 10px;">
+        <div class="mui-input-row">
+            <input id='account' type="text" class="mui-input-clear mui-input" placeholder="小组名称">
+        </div>
+        <div class="mui-input-row">
+            <input id='name' type="text" class="mui-input-clear mui-input" placeholder="组长姓名">
+        </div>
+        <div class="mui-input-row">
+            <input id='phone' type="number" class="mui-input-clear mui-input" placeholder="组长手机号">
+        </div>
+        <div class="mui-input-row">
+            <input id='school' type="text" class="mui-input-clear mui-input" placeholder="所在学校">
+        </div>
+        <div class="mui-input-row">
+            <input id='studentId' type="number" class="mui-input-clear mui-input" placeholder="组长学号">
+        </div>
+        <div class="mui-input-row">
+            <input id='email' type="email" class="mui-input-clear mui-input" placeholder="组长edu邮箱">
+        </div>
+        <div class="mui-input-row">
+            <input id='showUserPicker' type="text" class="mui-input-clear mui-input" placeholder="创业任务">
+        </div>
+        <div class="mui-input-row">
+            <input type="text" class="mui-input-clear mui-input" placeholder="本组暗号">
+        </div>
+        <div class="mui-input-row">
+            <input type="text" class="mui-input-clear mui-input" placeholder="标签名称">
+        </div>
+    </form>
+    <div class="mui-content-padded">
+        <button id='reg' class="mui-btn mui-btn-block mui-btn-primary">提交</button>
+    </div>
+</div>
+<script src="../js/mui.min.js"></script>
+<script src="../js/mui.picker.min.js"></script>
+<script src="../js/mui.poppicker.js"></script>
+<script>
+    (function($, doc) {
+        $.init();
+        $.ready(function() {
+            //普通示例
+            var userPicker = new $.PopPicker();
+            userPicker.setData([{
+                value: 'a',
+                text: '创业任务1'
+            }, {
+                value: 'b',
+                text: '创业任务2'
+            }, {
+                value: 'c',
+                text: '创业任务3'
+            }]);
+            var showUserPickerButton = doc.getElementById('showUserPicker');
+            showUserPickerButton.addEventListener('tap', function(event) {
+                userPicker.show(function(items) {
+                    showUserPickerButton.value = (items[0].text);
+                    //返回 false 可以阻止选择框的关闭
+                    //return false;
+                });
+            }, false);
+        });
+    })(mui, document);
+</script>
+</body>
+
+</html>
