@@ -1,0 +1,56 @@
+.plate-box{
+  height: 300px;
+  @include clear_fix;
+  .plate-container{
+    float: left;
+    width: 33.33333%;
+    height: 100%;
+    &:nth-child(1),&:nth-child(3){
+      .plate-content{
+        height: 75px;
+      }
+    }
+    &:nth-child(2){
+      .plate-content{
+        height: 100px;
+      }
+    }
+  }
+  .plate-content{
+    border: 1px solid #656565;
+    padding: 5px;
+    span{
+      font-size: 10px;
+    }
+  }
+}
+.plate-edit_btn{
+  text-align: center;
+  margin-top: 5px;
+  >span{
+    display: inline-block;
+    padding: 3px;
+    background-color: #007aff;
+    margin-right: 2px;
+    color: #ffffff;
+    border-radius: 2px;
+  }
+}
+.plate-show{
+  border: 1px solid #333333;
+  padding: 5px;
+  height: 170px;
+  overflow-y: auto;
+  margin-bottom: 45px;
+}
+
+.team-type_btn{
+  margin-top: 20px;
+  padding: 5px;
+  background-color: #007aff;
+  >span{
+    margin-right: 15px;
+    font-size: 20px;
+    color: #ffffff;
+  }
+}

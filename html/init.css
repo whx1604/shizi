@@ -30,6 +30,9 @@ ul, ol, li {
 .m-top {
   margin-top: 5px !important; }
 
+.m-bottom {
+  margin-bottom: 5px !important; }
+
 .margin-span_child > span {
   margin-right: 5px; }
 
@@ -297,5 +300,54 @@ body {
   margin: 0px;
   border: none;
   float: left; }
+
+.plate-box {
+  height: 300px; }
+  .plate-box:after, .plate-box:before, .plate-box::after, .plate-box::before {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both; }
+  .plate-box .plate-container {
+    float: left;
+    width: 33.33333%;
+    height: 100%; }
+    .plate-box .plate-container:nth-child(1) .plate-content, .plate-box .plate-container:nth-child(3) .plate-content {
+      height: 75px; }
+    .plate-box .plate-container:nth-child(2) .plate-content {
+      height: 100px; }
+  .plate-box .plate-content {
+    border: 1px solid #656565;
+    padding: 5px; }
+    .plate-box .plate-content span {
+      font-size: 10px; }
+
+.plate-edit_btn {
+  text-align: center;
+  margin-top: 5px; }
+  .plate-edit_btn > span {
+    display: inline-block;
+    padding: 3px;
+    background-color: #007aff;
+    margin-right: 2px;
+    color: #ffffff;
+    border-radius: 2px; }
+
+.plate-show {
+  border: 1px solid #333333;
+  padding: 5px;
+  height: 170px;
+  overflow-y: auto;
+  margin-bottom: 45px; }
+
+.team-type_btn {
+  margin-top: 20px;
+  padding: 5px;
+  background-color: #007aff; }
+  .team-type_btn > span {
+    margin-right: 15px;
+    font-size: 20px;
+    color: #ffffff; }
 
 /*# sourceMappingURL=init.css.map */
