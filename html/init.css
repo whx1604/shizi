@@ -350,4 +350,9 @@ body {
     font-size: 20px;
     color: #ffffff; }
 
+.file-show {
+  height: 400px;
+  overflow: auto;
+  border: 1px solid #e6e6e6; }
+
 /*# sourceMappingURL=init.css.map */

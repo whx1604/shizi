@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>组队表单</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="../mui.min.css">
+    <link rel="stylesheet" href="../init.css">
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">我</h1>
+</header>
+<div class="mui-content">
+    <div style="padding: 10px 10px;">
+        <div id="segmentedControl" class="mui-segmented-control">
+            <a class="mui-control-item" href="#item1">试一试</a>
+            <a class="mui-control-item" href="#item2">应用</a>
+            <a class="mui-control-item" href="#item3">任务</a>
+            <a class="mui-control-item mui-active" href="#item4">我</a>
+        </div>
+    </div>
+    <div class="t-center m-top m-bottom">
+        <h4>余小二</h4>
+    </div>
+    <form class="mui-input-group" style="margin: 0 10px;">
+        <div class="mui-input-row">
+            <input id='account' type="text" class="mui-input-clear mui-input" placeholder="所在学校">
+        </div>
+        <div class="mui-input-row">
+            <input id='email' type="text" class="mui-input-clear mui-input" placeholder='Edu邮箱'>
+        </div>
+        <div class="mui-input-row">
+            <input id='phone' type="number" class="mui-input-clear mui-input" placeholder="手机">
+        </div>
+        <div class="mui-input-row">
+            <input id='studentId' type="number" class="mui-input-clear mui-input" placeholder="学号">
+        </div>
+        <div class="mui-input-row">
+            <input type="text" class="mui-input-clear mui-input" placeholder="小组信息">
+        </div>
+        <div class="mui-input-row">
+            <input type="password" class="mui-input-clear mui-input" placeholder="当前密码">
+        </div>
+    </form>
+    <div class="mui-content-padded">
+        <button id='reg' class="mui-btn mui-btn-block mui-btn-primary">保存</button>
+    </div>
+</div>
+<script src="../js/mui.min.js"></script>
+</body>
+
+</html>
